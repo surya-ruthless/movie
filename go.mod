@@ -1,3 +1,3 @@
-module github.com/iam-veeramalla/movie
+module github.com/surya-ruthless/movie
 
 go 1.22.5
