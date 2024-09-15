@@ -1,0 +1,120 @@
+/* Reset some default styles */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff6f61, #d4a5a5);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #ff5722;
+    padding: 20px;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.nav-button {
+    background: #fff;
+    color: #ff5722;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background: #ff8a65;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+/* Movies List Styles */
+#movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Movie Card Styles */
+.movie-card {
+    background: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.movie-card p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .movie-card {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .nav-button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 1em;
+    }
+
+    #movies-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
